@@ -1,0 +1,1 @@
+Please download Oracle Enterprise 11.2.0 and unzip into step2/install directory (should be step2/install/database/*) prior to building
