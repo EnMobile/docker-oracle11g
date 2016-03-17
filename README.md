@@ -10,11 +10,22 @@ To build this image:
 
 3. Execute `build.sh`
 
-4. Use the database!
-```
-docker run -d --privileged -p 1521:1521 enmobile/oracle11g
-```
-5. Connect to the database via docker machine ip port 1521, username sysdba, password welcome1
+4. Docker run the database:
+    ```
+    docker run -d --privileged -p 1521:1521 enmobile/oracle11g
+    ```
+
+5. Or use in docker-compose:
+    ```
+    db:
+      image: enmobile/oracle11g
+      container_name: db
+      privileged: true
+      ports:
+        - "1521:1521"
+    ```
+
+6. Connect to the database via docker machine ip port 1521, username sys as sysdba, password change_on_install
 
 
 ## License
