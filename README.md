@@ -4,7 +4,7 @@
 ## Build
 To build this image:
 
-1. Download Oracle Enterprise DB 11.2.1
+1. Download Oracle Enterprise DB 11.2.0
 
 2. Unzip the 2 zip files in the `step2/install` directory (should be `step2/install/database`)
 
