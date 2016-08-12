@@ -1,4 +1,4 @@
-# Instant Oracle datase server
+# Instant Oracle database server
 #### Credit to [wscherphof](https://github.com/wscherphof) for his [inspiration](https://github.com/wscherphof/oracle-12c)
 
 ## Build
