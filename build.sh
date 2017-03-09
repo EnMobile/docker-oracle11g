@@ -13,7 +13,7 @@ docker commit $STEP3 oracle-11g:created
 docker kill $STEP3
 docker rm $STEP3
 docker build -t enmobile/oracle11g step4/.
-export STEP4=`docker run -d --privileged -v ${PWD}/step5/install:/tmp/install enmobile/oracle11g
+export STEP4=`docker run -d --privileged -v ${PWD}/step5/install:/tmp/install enmobile/oracle11g`
 docker exec -it $STEP4 sh -c '/tmp/install_text.sh'
 docker commit $STEP4 enmobile/oracle11g:text_index_enabled
 docker kill $STEP4
